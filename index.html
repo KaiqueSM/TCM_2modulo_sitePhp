@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>        
+        <meta charset="utf8">
+        <meta name="author" content="Equipe The Growth Tree"/>
+        <meta name="description" content="Este é o site da empresa The Growth Tree, uma startup de desenvolvimento de sistemas"/>
+        <meta name="keywords" content="desenvilvimento, the growth tree, sistemas, programação"/>
+        <meta name="reply-to" content="tgtreedevelopment@gmail.com"/>
+        <meta name="robots" content="index.noflow"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+        <title>The Growth Tree</title>
+
+
+
+
+
+        <link rel="stylesheet" href="estilo.css"/>
+        <script>
+            function AbreMenu()
+            {
+                document.getElementById('itensMenu').style.height = "97%";
+                document.getElementById('itensMenu').style.zIndex = "2";
+                document.getElementById('itensMenu').style.visibility = "visible";
+                document.getElementById('ulMenuMobile').style.opacity = "1";
+            }
+            function FechaMenu()
+            {
+                document.getElementById('ulMenuMobile').style.opacity = "0";
+                document.getElementById('itensMenu').style.height = "0%";
+                document.getElementById('itensMenu').style.zIndex = "-1";
+                document.getElementById('itensMenu').style.visibility = "hidden";
+            }
+        </script>
+
+    </head>
+    <body>
+        <!-- ---Menu para mobile--- -->
+        <header id="menuMobile" onclick="AbreMenu()"> 
+            <span id="abreMenu"> &#9776; </span>
+        </header>
+
+        <div id="itensMenu">
+            <ul id="ulMenuMobile">
+                <li> <a href="#bemVindo" onclick="FechaMenu()">Home</a></li>
+                <li><a href="#sobre" onclick="FechaMenu()">Sobre Nós</a></li>
+                <li><a href="#contato" onclick="FechaMenu()">Contato</a> </li>
+                <li><a href="#portifolio" onclick="FechaMenu()">Portifólio</a></li>
+                <li><a href="#sust" onclick="FechaMenu()">Sustentabilidade</a></li>
+                <li><a href="#SAC" onclick="FechaMenu()">SAC</a></li>
+                <li><a onclick="FechaMenu()">X</a></li>
+            </ul>
+        </div>
+
+
+        <!-- ---Menu para computador--- -->
+        <nav id="menuDesktop">
+            <img src="https://1.bp.blogspot.com/-fSbYlNY_wpo/XzB7LOiBVyI/AAAAAAAAADI/iEYmpp7sO0kt6v8FM5IENZGVEgj3GU1EACLcBGAsYHQ/s640/logo_retangulo%2Bcopiar.jpg"/>
+
+            <ul> <h2>
+                <li> <a href="#bemVindo">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a> </li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#sust">Sustentabilidade</a></li>
+                <li><a href="#SAC">SAC</a></li>
+            </ul> </h2>
+        </nav>
+
+        <h1 class="titulo" id="bemVindo">SEJA BEM-VINDO!</h1>
+        <img id="logoMobile" src="https://1.bp.blogspot.com/-l9yDeQaeHS8/XyeTG0vmmTI/AAAAAAAAACE/eJmFZrq6Et87Zs96315zta_IeQl2uZjOACLcBGAsYHQ/s640/logo_redonda.png"/>
+        <!-- ---Slide show--- -->
+        <div id="slideShow">
+            <img class="slide1" src="https://1.bp.blogspot.com/-dK_4lnzMAxQ/X63py98N-tI/AAAAAAAAAHw/lHRaNfFWNoMnPiE1wcOtlD1e6nkKCd_FACLcBGAsYHQ/s838/ss1.jpg" alt="img1"/>
+
+            <img src="https://1.bp.blogspot.com/-pVXQHJ5d3dQ/X63py9dyKFI/AAAAAAAAAHo/KacXen3HP3o8xlRYzGAu_PtrqDUVM5vnQCLcBGAsYHQ/s838/ss2.jpg" alt="img2"/>
+
+            <img src="https://1.bp.blogspot.com/-U2JZH4DqsvE/X63pyww5jYI/AAAAAAAAAHs/XFHuLG9MPqYsyNSV9wrKLcQL8ASeglZrgCLcBGAsYHQ/s838/ss3.jpg" alt="img3"/>
+        </div>
+
+        <script>
+            let time = 3000,
+            currentImageIndex = 0,
+            images = document
+                        .querySelectorAll("div#slideShow img")
+            max = images.length;
+
+            function nextImage() {
+
+            images[currentImageIndex]
+                .classList.remove("slide1")
+
+            currentImageIndex++
+
+            if(currentImageIndex >= max)
+                currentImageIndex = 0
+
+            images[currentImageIndex]
+                .classList.add("slide1")
+            }
+
+            function start() {
+            setInterval(() => {
+                nextImage()
+            }, time)
+            }
+
+            window.addEventListener("load", start)
+        </script>
+
+        
+
+
+        <h1 class="titulo" id="sobre"> SOBRE NÓS </h1>
+        <section>
+            <div class="conteudo texto">
+                <p> Nós somos a The Growth Tree, uma empresa criada em abril de 2020, por 4 amigos que perceberam uma grande chance de crescimento e visibilidade no mundo tecnológico, com o intuito de fazer com que a tecnologia e a modernidade “floresça” nos sistemas de seus clientes, facilitando a vida dos usuários e compactando todo o sistema. Nossa meta é fazer com que as pessoas tenham outra visão sobre a tecnologia, onde possa fazer da internet o seu dia a dia e cada vez mais usufruir disso. </p>
+            </div>
+        </section>
+
+        <section id="mvv">
+            <div class="mvv">
+                <h1> MISSÃO </h1>  
+                <p>Fornecer aos clientes a melhor experiência tecnológica!</p>
+            </div>
+            <div class="mvv">
+                <h1> VISÃO </h1>  
+                <p>Levar nossos clientes ao caminho do sucesso através da tecnologia.</p>
+            </div>
+            <div class="mvv">
+                <h1> VALORES </h1>  
+                <p>
+                    - Honestidade </br>
+                    - Prontidão </br>
+                    - Dedicação 
+                </p>
+            </div>
+        </section>
+
+        <h1 class="titulo" id="contato">CONTATO</h1>
+        <div class="conteudo" id="divContato">
+            <p>Aqui está a nossa localização para nos encontrar fisicamente</p> 
+            <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=-23.5206403, -46.728342891020475&amp;q=R.%20Guaip%C3%A1%2C%20678%20-%20Vila%20Leopoldina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005089-000+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.maps.ie/draw-radius-circle-map/">Google Maps</a>
+            </iframe>
+            <br/>
+            <p>Aqui estão nossas redes sociais, onde você pode acompanhar o nosso trabalho</p>
+            
+            <a href="https://www.instagram.com/tgtdevelopment/"><img src="https://1.bp.blogspot.com/-2e4pkNCnFVc/X8Ax9C7wkWI/AAAAAAAAAMU/8PhUYOXPKS0GFXtvBMj-MPe9Mf5aNJ7eQCLcBGAsYHQ/s320/icone_insta.png"/></a>
+            <a href="https://www.facebook.com/The-Growth-Tree-Development-107126324355554/"> <img src="https://1.bp.blogspot.com/-NCMioCibnKw/X8Av1myx3_I/AAAAAAAAAL4/KZRcvrzMBGg9tcgzio1b-XRLrmESdkjngCLcBGAsYHQ/s626/icone_face.png"/> </a>
+            <a href="#"> <img src="https://1.bp.blogspot.com/-tvwZY2wOpqE/X8Av1uj16zI/AAAAAAAAAL8/DU6u9vojf-obUFsCHGBqA1z1pGiA6wEkACLcBGAsYHQ/s320/icone_linkedin.png"/></a>
+            <br/> 
+
+        </div>
+
+        <h1 id="portifolio" class="titulo">PORTIFÓLIO</h1>
+        <section>
+            <div class="conteudo">
+                <p class="texto">Aqui podemor ver algumas das empresas que são nossas parceiras em alguns projetos</p>
+                <table id="tblPotifolio">
+                    <tr>
+                        <td> <img src="https://1.bp.blogspot.com/-uoZ-G_UCMQk/XzNQyW1dHII/AAAAAAAAAEA/zLsjECEby-AuKVfYapSuSejDDtRn_cL2ACLcBGAsYHQ/s0/nike.png"/>  </td>
+                        <td> <img src="https://1.bp.blogspot.com/-Z6Jzjqi-m1o/XzNQyFWwCxI/AAAAAAAAAD8/9mvjOeFu_ogew4qIBcyILTn4BaIfisrrwCLcBGAsYHQ/s0/nasa.png"/>  </td>
+                        <td> <img src="https://1.bp.blogspot.com/-OUXOJYE4OwY/XzNQycRqEEI/AAAAAAAAAEE/RWf18JcN9TgI_GzsJX28qFpfEb3-vwdvACLcBGAsYHQ/s0/tmobile.png"/>  </td>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://1.bp.blogspot.com/-PTHaoexJV_A/XzNQxQjgDPI/AAAAAAAAAD4/jblX-buK3Pwv9dLX7T2AHchjLkjf0obugCLcBGAsYHQ/s0/adobe.png"/>  </td>
+                        <td> <img src="https://1.bp.blogspot.com/-Q2ECqR_YYaQ/XzNQxfTcMhI/AAAAAAAAADw/epLQDYGsH9EHXoXma6cKyr-pw2iOlkySwCLcBGAsYHQ/s0/google.png"/>  </td>
+                        <td> <img src="https://1.bp.blogspot.com/-OjdcofICMrU/XzNQxZf7h0I/AAAAAAAAAD0/g8NwaR-vnSQrwNlu6zjEWbWbmAU_mqVPQCLcBGAsYHQ/s0/microsoft.png"/>  </td>
+                    </tr>
+                </table>
+                <ul>
+                    <h3 class="texto">Aqui estão alguns dos serviços que podemos te oferecer:</h3>
+                    <p>
+                        <li>Desenvilvimento de sites</li>
+                        <li>
+                            Desenvolvimento de aplicativos mobile
+                            <ul class="ul-serv">
+                                <li><img id="img-app-mobile1" src="https://lh3.googleusercontent.com/-6x_4fPaHX_g/X84oLUEm84I/AAAAAAAAAR0/35z_OrCPlA4mB2ElXlsZij10MO6lpO6ZACLcBGAsYHQ/appmob1.jfif"></li>
+                                <li><img id="img-app-mobile2" src="https://lh3.googleusercontent.com/-r8bg8heFARA/X84oXHz1LYI/AAAAAAAAAR8/Dve-O3vWVD06CN5CU00HTS4V76ozaOsWgCLcBGAsYHQ/appmob2.jfif"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Desenvolvimento de sistemas em Windows forms
+                            <ul class="ul-serv">
+                                <li><img src="https://1.bp.blogspot.com/-S3-3WKzrLyc/X81aoge8bQI/AAAAAAAAAQo/h2VBz7u0issa6SI_46LeSa9_sEquIfnWACLcBGAsYHQ/s320/sistemaC3%2B2.jpg"></li>
+                                <li><img src="https://1.bp.blogspot.com/-QI1jqKuabXA/X81aoo5_LBI/AAAAAAAAAQs/Zpof4C-YiZ0hJeMBzrsJki5bRs9Vdf4rgCLcBGAsYHQ/s320/sistemaC3%2B1.jpg"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Desenvolvimento de sistemas em Asp.Net
+                            <ul class="ul-serv">
+                                <li><img src="https://1.bp.blogspot.com/-Ed7k1ciG7dc/X81ex5W3nWI/AAAAAAAAARQ/o45xu1XHnPoPekzj8Tg6JlpUSdplMmlKQCLcBGAsYHQ/s320/img%2Bsistasp1.jpg"></li>
+                                <li><img src="https://1.bp.blogspot.com/-8lFRVCNaeUU/X81ex8wTMmI/AAAAAAAAARM/pHZqVWrU8WkQHTyIFq8zwa1XHUX5y9h7QCLcBGAsYHQ/s320/img%2Bsistasp2.jpg"></li>
+                                <li><img src="https://1.bp.blogspot.com/-pAoUGiBkuUE/X81ex1glqOI/AAAAAAAAARU/Q-WhItDoQkwCprrULXnOezJ4VazR6S4WACLcBGAsYHQ/s320/img%2Bsistasp3.jpg"></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            Planejamento de redes
+                            <ul class="ul-serv">
+                                <li><img id="img-redes-america" src="https://1.bp.blogspot.com/-XYMSSJUpfI0/X81aqRriAkI/AAAAAAAAAQw/oSYOwuS5c6EVC0PoAUcOqn8A8DqSHtc7wCLcBGAsYHQ/s320/rede-america.png"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Criação de plantas baixas com rede
+                            <ul class="ul-serv">
+                                <li><img src="https://lh3.googleusercontent.com/-vkYdFL4DfJI/X84ob-Aty-I/AAAAAAAAASI/CItTuubH9akUTTG9L3Er5b9yS6VHbBKggCLcBGAsYHQ/plantaTgtcabos.jpg"></li>
+                            </ul>
+                        </li>
+                    </p>
+                </ul>
+                <p>Entre em contato via redes sociais ou pelo SAC para orçamentos</p>
+            </div>
+        </section>
+
+        <h1 class="titulo" id="sust">Sustentabilidade</h1>
+        <section>
+            <div class="conteudo">
+                <p class="texto">Temos o conceito de sustentabilidade aplicado em nossa empresa, fazendo com que os nossos funcionários ajudem o meio ambiente também! Devemos todos nos importar com a natureza e a situação na qual ela se encontra; se todos ajudarem será possível ter um cenário totalmente diferente do atual. Tudo por um planeta mais limpo!</p>
+                <img id="imgSust" src="https://1.bp.blogspot.com/-5hSRMnnMO4Y/XzNY-4B6YnI/AAAAAAAAAEc/ywVfpXkN5OgZfih6H2UWIVv3PF8OgINpgCLcBGAsYHQ/s640/sust.jpeg"/>
+                <p class="texto"> Precisamos preservar a natureza, pois ela é o que nos cede todos os recursos necessários para nossa vida; o ser humano precisa estar em harmonia com ela para garantir a nossa existência de forma saudável e longínqua. </p>
+            </div>
+        </section>
+
+        <h1 class="titulo" id="SAC">SAC</h1>
+        <section class="conteudo">
+            <h2>Perguntas frequentes</h2>
+            <div id="pergs">
+                <h3>- Vocês trabalham com manutenção de hardware?</h3>
+                <p>Não, nossa startup é focada no desenvolvimento de softwares.</p>
+                <h3>- Qual a indicação de vocês para optar por um site com php ou um sistema?</h3>
+                <p>Indicamos um site com php para finalidades mais simples, com um banco menor e sistemas para quando é necessário acessos á um banco maior.</p>
+                <h3>- Qual a principal linguagem e plataforma que a TGT ultiliza em seus sistemas?</h3>
+                <p>Ultilizamos a linguagem C# na plataforma Asp.Net.</p>
+
+            </div>
+            <br/>
+            <hr>
+            <br/>
+            <h2>Entre em contato!</h2>
+            <form id="formSac" method="POST" action="cad-msg-index.php">
+                <input type="text" name="txtNome" id="txtNome" maxlength="50" placeholder="Nome" required/> <br/>
+                <input type="email" name="txtEmail" id="txtEmail" maxlength="30" placeholder="E-mail" required/> <br/>
+                <textarea maxlength="50" name="txtAssunto" id="txtAssunto" placeholder="Assunto do contato" required></textarea> <br/>
+                <input type="submit" value="Enviar" name="btnEnviar" id="btnEnviar"/>
+                <input type="reset" value="Limpar">
+            </form>
+            
+            <br/>
+            <hr/>
+
+            <div id="btnLogin">
+                <a href="login.html">
+                    <p>Login</p>
+                </a>
+            </div>
+
+        </section>
+
+
+
+        <footer>
+            <h5>The Growth Tree</h5>
+            <hr>
+            <p>Deixe a tecnologia crescer em você!</p>
+        </footer>
+
+
+    </body>
+</html>

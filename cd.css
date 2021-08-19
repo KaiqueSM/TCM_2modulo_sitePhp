@@ -1,0 +1,207 @@
+@charset "UTF-9";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+/* --- --- */
+body
+{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Lemonada', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+
+/* --- Menu lateral --- */
+
+nav#sidebar
+{
+    position: fixed;
+    background-color: rgb(39, 38, 38);
+    border-right:2px solid rgb(255, 255, 255);
+    margin: -17px 0px 0px -6px;
+    width: 12%;
+    height: 102%;
+}
+nav#sidebar ul#ul-sidebar
+{
+    height: 83%;
+    list-style-type: none;
+    margin-left: -25.8%;
+    color: rgb(255, 255, 255);
+}
+nav#sidebar ul#ul-sidebar img
+{
+    width: 80%;
+}
+nav#sidebar a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav#sidebar a:hover
+{
+    color: rgb(36, 51, 180);
+}
+nav#sidebar li
+{
+    margin-bottom: 5%;
+}
+nav#sidebar hr
+{
+    width: 80%;
+}
+
+
+/* --- --- */
+
+
+/* --- menu dropdown --- */
+ul ul 
+{
+    position: absolute;
+    list-style-type: none;
+    width: 60%;
+    margin-left: 100%;
+    margin-top: -18.5%;
+    display: none;
+    background-color: rgb(61, 61, 61);
+    border: 2px solid rgb(255, 255, 255);
+    border-left: none;
+}
+ul ul li 
+{
+    display: block;
+    margin: 0.5% 0% 0.5% -10%;
+    width: 15%;
+
+}
+ul li:hover ul 
+{
+    display: block;
+
+}
+/* --- --- */
+
+
+/* --- div do conteúdo --- */
+div#conteudo
+{
+    border:2px solid rgb(255, 255, 255);  
+    width: 80%;
+    margin-left: 14%;
+    background-color: rgb(39, 38, 38);
+    padding: 0% 2% 2% 2%;
+}
+/* --- --- */
+
+
+
+/* --- Formulário --- */
+form
+{
+    text-align: center;
+}
+form input[type=text], [type=email]
+{
+    width: 30%;
+    border-radius: 5px;
+}
+form textarea
+{
+    width: 40%;
+    resize: none;
+    font-size: 100%;
+    border-radius: 5px;
+}
+form input, textarea
+{
+    text-align: center;
+    font-size: 100%;
+    padding: 0.5%;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 2%;
+}
+form input[type=submit], form input[type=reset]
+{
+    border-radius: 20px;
+    width: 10%;
+    padding: 0.4%;
+    margin: 2% 0.8% 0% 0.8%;
+    cursor: pointer;
+}
+select, option
+{
+    background-color: rgb(39, 38, 38);
+    text-align: center;
+    font-size: 100%;
+    padding: 0.5%;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 2%;
+}
+option
+{
+    background-color: rgb(39, 38, 38);
+}
+::-webkit-input-placeholder
+{
+    color: rgb(255, 255, 255);
+}
+/* --- --- */
+
+
+img
+{
+    margin-top: 2%;
+    width: 15%;
+}
+
+
+
+
+
+/* --- Tabela --- */
+table#tbl
+{
+    font-size: 80%;
+    margin-bottom: 2%;
+}
+table#tbl td,th
+{
+    width: 10%;
+    border: 2px solid rgb(255,255,255);
+}
+table#tbl td.msg
+{
+    width: 30%;
+}
+
+/* --- --- */
+
+/* --- Parte de exclusão --- */
+#txt-cd
+{
+    background: none;
+    border: 1px solid rgb(255,255,255);
+    padding: 6px;
+    color: rgb( 255,255,255);
+    margin: 3px;
+}
+::-webkit-input-placeholder
+{
+    color: rgb(255, 255, 255);
+}
+#btn-excluir
+{
+    background: none;
+    border: 1px solid rgb(255,255,255);
+    color: rgb( 255,255,255);
+
+}
+/* --- --- */
+

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf8">
+        <meta name="author" content="Equipe The Growth Tree"/>
+        <meta name="description" content="Este é o site da empresa The Growth Tree, uma startup de desenvolvimento de sistemas"/>
+        <meta name="keywords" content="desenvilvimento, the growth tree, sistemas, programação"/>
+        <meta name="reply-to" content="tgtreedevelopment@gmail.com"/>
+        <meta name="robots" content="index.noflow"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>        
+        <title>Login</title>
+
+        <link rel="stylesheet" href="login.css"/>
+
+
+     
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form method="post" action="login.php">
+            <img src="https://tylerman.com.br/imagens/icon_login.png"/>
+            <input type="text" name="txtnome" id="txtnome" placeholder="Nome de usuário" required/> <br/>
+            <input type="password" name="txtsenha" id="txtsenha" placeholder="Senha" required/> <br/>
+            <input type="submit" name="btnLogin" value="Entrar"/>
+            <input type="reset" name="Limpar" value="Limpar" onclick="document.getElementById('txtnome').focus()"/>
+        </form>
+        <h3><a href="index.html">Voltar</a></h3>
+
+
+    </body>
+</html>

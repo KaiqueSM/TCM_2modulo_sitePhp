@@ -1,0 +1,542 @@
+@charset "UTF-9";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+/* --- --- */
+body
+{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Lemonada', cursive;
+    color: rgb(255, 255, 255);
+    width: 97%;
+    font-size: 3vw;
+}
+
+#bemVindo
+{
+    padding-top: 0%;
+    margin-top: -5%;
+}
+.titulo
+{
+    padding-top: 10%;
+    font-size: 150%;
+    text-align: center;
+}
+.conteudo
+{
+    width: 80%;
+    margin-left: 8%;
+    background-color: rgb(39, 38, 38);
+    box-shadow: 15px -10px 3px rgb(99, 99, 99);
+    padding: 2%;
+}
+.texto 
+{
+    text-indent: 6%;
+}
+div#pergs p
+{
+    padding: 1%;
+}
+div#pergs 
+{
+    font-size: 2.5vw;
+}
+
+/* ---Configurações mvv--- */
+#mvv
+{
+    margin-top: 5%;
+}   
+.mvv
+{
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    padding: 2%;
+    background-color: rgb(39, 38, 38);
+    box-shadow: 15px -10px 3px rgb(99, 99, 99);
+}
+.mvv h1
+{
+    text-align: center;
+}
+/* --- --- */
+
+/* ---Configurações contato--- */
+div#divContato
+{
+    text-align: center;
+}
+div#divContato iframe 
+{
+    width: 80%;
+}
+div#divContato img
+{
+    width: 18%;
+}
+div#divContato a
+{
+    color: rgb(39, 38, 38);
+}
+
+
+/* --- --- */
+
+/* ---configuraçõed portifólio--- */
+#tblPotifolio
+{
+    margin-left: 6%;
+    margin-bottom: 5%;
+}
+
+#tblPotifolio td
+{
+    width: 39%;
+    padding: 3%;
+}
+#tblPotifolio td img
+{
+    width: 60%;
+    align-items: center;
+}
+
+/* --- --- */
+
+/* ---Sustentabilidade--- */
+#imgSust
+{
+    margin: 2% 20% 2% 20%;
+    width: 60%;
+}
+
+/* --- --- */
+
+/* ---Configurações SAC--- */
+div#pergs
+{
+    width: 105%;
+    margin-left: -2.5%;
+    text-indent: 12px;
+}
+div#pergs h3
+{
+    background-color: rgb(19, 19, 19);
+    padding: 1.3% 0% 1.3% 0%;
+}
+div#pergs p
+{
+    background-color: rgb(39, 38, 38);
+}
+
+h2 {text-align: center; margin-bottom: -0.3%;}
+
+form#formSac
+{
+    text-align: center;
+}
+form#formSac input[type=text], [type=email]
+{
+    width: 80%;
+    border-radius: 5px;
+}
+form#formSac textarea
+{
+    width: 80%;
+    resize: none;
+    font-size: 100%;
+    border-radius: 5px;
+}
+form#formSac input, textarea
+{
+    text-align: center;
+    font-size: 100%;
+    padding: 0.5%;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 2%;
+}
+form#formSac input[type=submit], form#formSac input[type=reset]
+{
+    border-radius: 20px;
+    width: 40%;
+    padding: 0.4%;
+    margin: 2% 0.8% 0% 0.8%;
+    cursor: pointer;
+}
+::-webkit-input-placeholder
+{
+    color: rgb(255, 255, 255);
+}
+
+
+/* --- --- */
+
+
+/* ---Menu para pmobile--- */
+#abreMenu
+{
+    cursor: pointer;
+}
+img#logoMobile
+{
+    width: 50%;
+    margin-left: 25%;
+}
+#menuMobile
+{
+    background-color: rgb(39, 38, 38);
+    position: fixed;
+    width: 98%;
+    z-index: 3;
+    text-align: center;
+    font-size: 120%;
+    margin: -2% 0% 0% -1.5%; 
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-left: 4px solid rgb(255, 255, 255);
+    border-right: 4px solid rgb(255, 255, 255);
+    border-radius: 0px 0px 10px 10px;
+}
+div#itensMenu
+{
+    background-image: url("https://1.bp.blogspot.com/-lbTqLfpnSyk/X67cbO9DWII/AAAAAAAAAII/IkKWqI45_ocaX-U6wo8wXW5sMvWqSBjAQCLcBGAsYHQ/s615/fundoMenu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 0%;
+    margin-left: -1.6%;
+    margin-top: 3%;
+    font-size: 140%;
+    z-index: -1;
+    visibility: hidden;
+    transition: 0.7s;
+}
+div#itensMenu ul#ulMenuMobile
+{
+    list-style-type: none;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+div#itensMenu li
+{
+    text-align: center;
+    padding: 3%;
+    margin-left: -10%;
+    transition: 0.7s;
+}
+div#itensMenu li a
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.7s;
+}
+.linkMenu
+{
+    visibility: hidden;
+}
+div#itensMenu li a:hover
+{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+div#itensMenu li:hover
+{
+    background-color: rgba(99, 99, 99, 0.486);
+}
+
+/* --- --- */
+
+
+/* --- imagens dos serviços --- */
+ul.ul-serv
+{
+    width: 80%;
+    margin-left: -5%;
+    list-style-type: none;
+    text-align: center;
+}
+ul.ul-serv li
+{
+    display: inline;
+    margin: 1%;
+}
+ul.ul-serv li img
+{
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+#img-redes-america 
+{
+    width: 100%;
+}
+#img-app-mobile1, #img-app-mobile2
+{
+    width: 45%;
+}
+
+/* --- --- */
+
+
+
+/* ---slide show */
+div#slideShow 
+{
+    width: 60%;
+    height: 25vw;   
+    margin-left: 20%;
+    margin-top: 5%;
+    position: relative;
+}
+
+div#slideShow img
+{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1000ms;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+div#slideShow img.slide1 
+{ 
+    opacity: 1;
+}
+/* --- --- */
+
+/* ---Rodapé--- */
+footer
+{
+    text-align: center;
+    padding-bottom: 0.6%;
+    margin: 50% -0.6% 0% -0.6%;
+    background-color: rgb(39, 38, 38);
+    border-top: solid 4px rgb(255, 255, 255);
+}
+
+/* --- --- */
+
+/* ---Botão login--- */
+div#btnLogin
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: auto;
+    overflow: visible;
+}
+div#btnLogin a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+div#btnLogin a:hover
+{
+    text-decoration: underline;
+}
+
+
+/* --- --- */
+
+
+
+
+
+
+
+
+
+
+
+/* ---anulando elementos específicos para o pc */
+nav#menuDesktop
+{
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+}
+nav#menuDesktop li
+{
+    display: block;
+    padding-bottom: 2%;
+    margin-left: 2%;
+    font-size: 0%;
+}
+nav#menuDesktop img
+
+{
+    width: 0%;
+}
+/* --- --- */
+
+    @media only screen and (min-width: 768px) 
+    {
+        /* ---Menu para pc--- */
+        body
+        {
+            font-size: 1.25vw;
+        }
+        nav#menuDesktop
+        {
+            position: fixed;
+            font-size: 80%;
+            z-index: 3;
+            top: 0px;
+            left: 0px;
+            width: 100.9%;
+            height: 15%;
+            background-color: rgb(39, 38, 38);
+            opacity: 1;
+            margin-top: -1%;
+            margin-left: -1%;
+            padding-right: 1%;
+            border-bottom: solid 4px rgb(255, 255, 255);
+            display: inline-block;
+        }
+        nav#menuDesktop img
+        {
+            width: 12%;
+            margin: 1.7% 0% -2% 5%;
+            border: solid 6px rgb(6, 10, 47);
+            border-radius: 20px;
+        }
+        nav#menuDesktop li
+        {
+            display: inline-block;
+            padding-bottom: 2%;
+            margin-left: 2%;
+            font-size: 90%;
+        }
+        nav#menuDesktop ul
+        {
+            margin-top: -4%;
+            margin-left: 25%;
+            font-size: 01.1vw;
+        }
+        nav#menuDesktop li a
+        {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            transition: 0.6s;
+        }
+        nav#menuDesktop li a:hover
+        {
+            color: rgb(36, 51, 180);
+        }
+        div#pergs 
+        {
+            font-size: 1.1vw;
+        }
+        /* --- --- */
+        #bemVindo
+        {
+            padding-top: 10%;
+            margin-top: 0%;
+            margin-bottom: -2%;
+        }
+
+        /* ---Configurações contato--- */
+        div#divContato
+        {
+            text-align: center;
+        }
+        div#divContato iframe 
+        {
+            width: 60%;
+        }
+        div#divContato img
+        {
+            width: 8%;
+        }
+        div#divContato a
+        {
+            color: rgb(39, 38, 38);
+        }
+        
+        /* --- --- */
+
+        
+        /* ---Configurações mvv--- */
+        .mvv
+        {
+            width: 18.5%;
+        }
+
+        /* --- --- */
+        
+        /* ---Configurações SAC--- */
+        form#formSac input[type=text], [type=email]
+        {
+            width: 40%;
+        }
+        form#formSac textarea
+        {
+            width: 40%;
+        }
+
+        form#formSac input[type=submit], form#formSac input[type=reset]
+        {width: 10%;
+        }
+        /* --- --- */
+
+        /* ---Rodapé--- */
+        footer
+        {
+            margin: 10% -0.6% 0% -0.6%;
+        }
+
+        /* --- --- */
+        
+        /* --- imagens dos serviços --- */
+        ul.ul-serv
+        {
+            width: 80%;
+            margin-left: 5%;
+            list-style-type: none;
+            text-align: center;
+        }
+        ul.ul-serv li
+        {
+            display: inline;
+            margin: 1%;
+        }
+        ul.ul-serv li img
+        {
+            width: 40%;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+        #img-redes-america 
+        {
+            width: 60%;
+        }
+        #img-app-mobile1, #img-app-mobile2
+        {
+            width: 15%;
+        }
+
+        /* --- --- */
+
+
+
+
+        /* ---anulando elementos específicos para o mobile */
+        img#logoMobile
+        {
+            width: 0%;
+            margin: 0;
+        }
+
+
+        /* --- --- */
+
+    }
+
+
